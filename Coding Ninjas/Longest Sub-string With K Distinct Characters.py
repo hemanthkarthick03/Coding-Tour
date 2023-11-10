@@ -37,7 +37,6 @@ left = 0
 for right in range(len(S)):
     char_count[S[right]] = char_count.get(S[right], 0) + 1
 
-    # If there are more than 'K' distinct characters in the current window, move the left pointer.
     while len(char_count) > K:
         char_count[S[left]] -= 1
         if char_count[S[left]] == 0:
