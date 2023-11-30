@@ -19,13 +19,13 @@ int main()
         std::cout << n << " is present in unordered set"
                   << "\n";
 
-    s.erase(s.begin());
+    s.erase(2);
     std::cout << "Elements after deleting the first element: ";
     for (auto it = s.begin(); it != s.end(); it++)
     {
         std::cout << *it << " ";
     }
-std:
+
     std::cout << "\n";
 
     std::cout << "The size of the unordered set is: " << s.size() << "\n";
