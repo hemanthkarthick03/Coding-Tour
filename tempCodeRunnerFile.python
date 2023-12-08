@@ -1,16 +1,1 @@
-good_string = input()
-name = input()
-distance = 0
-
-prev = good_string[0]
-for i in name:
-    if i in good_string:
-        current = i
-    else:
-        current = min(good_string, key=lambda x: abs(ord(x) - ord(i)))
-        if abs(ord(prev) - ord(current)) < abs(ord(i) - ord(current)):
-            current = prev
-    distance += abs(ord(i) - ord(current))
-    prev = current
-    
-print(distance)
+print((5^2)^1)

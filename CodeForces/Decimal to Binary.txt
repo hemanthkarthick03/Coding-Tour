@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+    int N, index = 0, power = 1;
+    unsigned long long int binary = 0;
+    scanf("%d", &N);
+    for(; N > 0; N = N >> 1, power *= 10){
+        binary += power * (N & 1);
+    }
+    printf("%llu", binary);
+    return 0;
+}
+ 
