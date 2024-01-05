@@ -105,6 +105,5 @@ int main()
 
     // Clear Queue
     while (!myQueue.empty())
-
         myQueue.pop();
 }
