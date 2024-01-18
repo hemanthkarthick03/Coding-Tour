@@ -9,22 +9,22 @@
 
 int main()
 {
-    /* std::cout << std::endl;
+    std::cout << std::endl;
 
-        std::vector<int> myVec{0, 0, 1, 1, 2, 2, 3, 4, 4, 5, 3, 6, 7, 8, 1, 3, 3, 8, 8, 9};
+    std::vector<int> myVec{0, 0, 1, 1, 2, 2, 3, 4, 4, 5, 3, 6, 7, 8, 1, 3, 3, 8, 8, 9};
 
-        std::vector<int>::iterator newEnd = std::unique(myVec.begin(), myVec.end());
+    // Unique Elements
+    std::vector<int>::iterator newEnd = std::unique(myVec.begin(), myVec.end());
 
-        for (std::vector<int>::iterator it = myVec.begin(); it != newEnd; ++it)
-            std::cout << *it << " ";
+    for (std::vector<int>::iterator it = myVec.begin(); it != newEnd; ++it)
+        std::cout << *it << " ";
 
-        std::cout << std::endl;
+    std::cout << std::endl;
 
-        std::cout << *next(myVec.begin(), 3) << " " << *prev(myVec.end(), 2);
-        return 0;
+    std::cout << *next(myVec.begin(), 3) << " " << *prev(myVec.end(), 2);
+    return 0;
 
-        std::cout << "\n";
-    */
+    std::cout << "\n";
 
     // List
     std::cout << "List";
