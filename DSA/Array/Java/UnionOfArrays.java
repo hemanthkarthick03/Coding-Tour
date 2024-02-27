@@ -1,45 +1,51 @@
 import java.util.*;
 
-class UnionOfArrays {
-    static ArrayList<Integer> FindUnion(int arr1[], int arr2[], int n, int m) {
-        int i = 0, j = 0; // pointers
-        ArrayList<Integer> Union = new ArrayList<>(); // Uninon vector
-        
+class Solution {
+    public static LinkedList<Integer> sortedArray(int[] a, int[] b) {
+        int i = 0, j = 0;
+        int n = a.length;
+        int m = b.length;
+
+        LinkedList<Integer> list = new LinkedList<>();
+
         while (i < n && j < m) {
-            if (arr1[i] <= arr2[j]) // Case 1 and 2
-            {
-                if (Union.size() == 0 || Union.get(Union.size() - 1) != arr1[i])
-                    Union.add(arr1[i]);
+            if (a[i] <= b[j]) {
+                if (list.size() == 0 || list.getLast() != a[i])
+                    list.add(a[i]);
                 i++;
-            } else // case 3
-            {
-                if (Union.size() == 0 || Union.get(Union.size() - 1) != arr2[j])
-                    Union.add(arr2[j]);
+            } else {
+                if (list.size() == 0 || list.getLast() != b[j])
+                    list.add(b[j]);
                 j++;
             }
         }
-        while (i < n) // IF any element left in arr1
-        {
-            if (Union.get(Union.size() - 1) != arr1[i])
-                Union.add(arr1[i]);
+
+        while (i < n) {
+            if (list.size() == 0 || list.getLast() != a[i])
+                list.add(a[i]);
             i++;
         }
-        while (j < m) // If any elements left in arr2
-        {
-            if (Union.get(Union.size() - 1) != arr2[j])
-                Union.add(arr2[j]);
+
+        while (j < m) {
+            if (list.size() == 0 || list.getLast() != b[j])
+                list.add(b[j]);
             j++;
         }
-        return Union;
-    }
 
-    public static void main(String args[]) {
-        int n = 10, m = 7;
-        int arr1[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        int arr2[] = { 2, 3, 4, 4, 5, 11, 12 };
-        ArrayList<Integer> Union = FindUnion(arr1, arr2, n, m);
-        System.out.println("Union of arr1 and arr2 is ");
-        for (int val : Union)
-            System.out.print(val + " ");
+        return list;
+    }
+}
+
+public class UnionOfArrays {
+    public static void main(String[] args) {
+        int[] a = { 1, 3, 5, 7, 9 };
+        int[] b = { 2, 4, 6, 8, 10 };
+
+        LinkedList<Integer> sortedList = Solution.sortedArray(a, b);
+
+        System.out.println("Merged Sorted Array:");
+        for (Integer num : sortedList) {
+            System.out.print(num + " ");
+        }
     }
 }

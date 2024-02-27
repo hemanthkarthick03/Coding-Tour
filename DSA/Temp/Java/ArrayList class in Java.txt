@@ -1,0 +1,33 @@
+ArrayList class in Java:
+
+1. `add(E element)`: Adds the specified element to the end of the list.
+2. `add(int index, E element)`: Inserts the specified element at the specified position in the list.
+3. `addAll(Collection<? extends E> c)`: Adds all elements of the specified collection to the end of the list.
+4. `addAll(int index, Collection<? extends E> c)`: Inserts all elements of the specified collection into the list at the specified position.
+5. `clear()`: Removes all elements from the list.
+6. `clone()`: Returns a shallow copy of the ArrayList instance.
+7. `contains(Object o)`: Returns true if the list contains the specified element.
+8. `ensureCapacity(int minCapacity)`: Increases the capacity of the ArrayList instance, if necessary, to ensure that it can hold at least the number of elements specified by the minimum capacity argument.
+9. `forEach(Consumer<? super E> action)`: Performs the given action for each element of the Iterable until all elements have been processed or the action throws an exception.
+10. `get(int index)`: Returns the element at the specified position in the list.
+11. `indexOf(Object o)`: Returns the index of the first occurrence of the specified element in the list, or -1 if the list does not contain the element.
+12. `isEmpty()`: Returns true if the list contains no elements.
+13. `iterator()`: Returns an iterator over the elements in the list.
+14. `lastIndexOf(Object o)`: Returns the index of the last occurrence of the specified element in the list, or -1 if the list does not contain the element.
+15. `listIterator()`: Returns a list iterator over the elements in the list (in proper sequence).
+16. `listIterator(int index)`: Returns a list iterator over the elements in the list (in proper sequence), starting at the specified position in the list.
+17. `remove(Object o)`: Removes the first occurrence of the specified element from the list, if it is present.
+18. `remove(int index)`: Removes the element at the specified position in the list.
+19. `removeAll(Collection<?> c)`: Removes from the list all of its elements that are contained in the specified collection.
+20. `removeIf(Predicate<? super E> filter)`: Removes all of the elements of this collection that satisfy the given predicate.
+21. `replaceAll(UnaryOperator<E> operator)`: Replaces each element of this list with the result of applying the operator to that element.
+22. `retainAll(Collection<?> c)`: Retains only the elements in this list that are contained in the specified collection.
+23. `set(int index, E element)`: Replaces the element at the specified position in the list with the specified element.
+24. `size()`: Returns the number of elements in the list.
+25. `sort(Comparator<? super E> c)`: Sorts this list according to the order induced by the specified Comparator.
+26. `spliterator()`: Creates a late-binding and fail-fast Spliterator over the elements in the list.
+27. `subList(int fromIndex, int toIndex)`: Returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+28. `toArray()`: Returns an array containing all of the elements in this list in proper sequence.
+29. `toArray(T[] a)`: Returns an array containing all of the elements in this list in proper sequence (from first to last element).
+
+These are the methods available in the ArrayList class that you can use to manipulate and work with ArrayList instances in Java.
