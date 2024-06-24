@@ -67,7 +67,7 @@ public class StringExample {
             if (Character.isTitleCase(a[i]))
                 System.out.println(a[i] + " is Title Case.");
 
-            System.out.println(Character.digit('6'));
+            System.out.println(Character.digit('6', 10));
         }
     }
 }
